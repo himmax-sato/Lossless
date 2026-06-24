@@ -60,9 +60,10 @@ jobs:
           sudo systemctl stop clamav-freshclam || true
           sudo pkill -f freshclam || true
           sudo freshclam || echo "Warning: freshclam database update failed, proceeding only if local definitions exist"
-          CLAMAV_DEFS_AVAILABLE=false
+          export CLAMAV_DEFS_AVAILABLE=false
           if [ ! -d /var/lib/clamav ]; then
             echo "Warning: /var/lib/clamav not found; malware scan will be skipped."
+          # Check for local ClamAV signature database files used by clamscan.
           elif find /var/lib/clamav -maxdepth 1 -type f \( -name "*.cvd" -o -name "*.cld" -o -name "*.cud" \) | grep -q .; then
             CLAMAV_DEFS_AVAILABLE=true
             echo "ClamAV definitions found; scanning changed files."
