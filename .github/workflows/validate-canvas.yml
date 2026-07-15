@@ -87,6 +87,26 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Auto-Sync and Fix JSON
+        if: github.event_name == 'pull_request_target'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          
+          if ! git merge origin/main --no-edit; then
+            echo "Merge conflict detected! Resolving automatically using auto-fixer..."
+          fi
+          
+          node /tmp/trusted-scripts/fix_canvas.js
+          
+          if ! git diff --quiet canvas.json || ! git diff --cached --quiet; then
+            git add canvas.json
+            git commit -m "Auto-sync with main and fix canvas.json formatting" || true
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.event.pull_request.head.repo.full_name }}.git pr-branch:${{ github.event.pull_request.head.ref }} || echo "Could not push to PR branch, continuing with local fix"
+          fi
+        continue-on-error: true
+
       - name: Run Validation Script
         id: run-validation
         env:
@@ -108,3 +128,10 @@ jobs:
       - name: Fail if validation failed
         if: steps.run-validation.outcome == 'failure'
         run: exit 1
+
+      - name: Auto-merge PR
+        if: github.event_name == 'pull_request_target' && steps.run-validation.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --squash --auto || gh pr merge ${{ github.event.pull_request.number }} --squash
