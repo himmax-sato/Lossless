@@ -6,6 +6,11 @@
       "url": "https://lossless.echomusic.fun/Music/himmax-sato-00_-_bts_-_one_more_night.flac"
     },
     {
+      "song": "TBH",
+      "artist": "PARTYNEXTDOOR",
+      "url": "https://lossless.echomusic.fun/Music/sgsmvp-partynextdoor_-_tbh.flac"
+    },
+    {
       "song": "Kannae Kanmaniye",
       "artist": "A.R. Rahman",
       "url": "https://lossless.echomusic.fun/Music/rupeshrn-Kannae_Kanmaniye.flac"
@@ -29,11 +34,6 @@
       "song": "Kannukulla",
       "artist": "Sai Abhyankkar, Jonita Gandhi & Adesh Krishna",
       "url": "https://lossless.echomusic.fun/Music/rupeshrn-Kannukulla.flac"
-    },
-    {
-      "song": "Yedi (From \"Nilavuku En Mel Ennadi Kobam\")",
-      "artist": "G. V. Prakash Kumar, Vivek, Dhanush, Jonita Gandhi nagar",
-      "url": "https://lossless.echomusic.fun/Music/rupeshrn-Yedi.flac"
     },
     {
       "song": "Aasa Kooda (From \"Think Indie\")",
@@ -2234,6 +2234,86 @@
       "song": "note to self.",
       "artist": "Josie Edwards",
       "url": "https://lossless.echomusic.fun/Music/alok-debnath-josie_edwards_-_note_to_self.flac"
+    },
+    {
+      "song": "3am",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_3am.flac"
+    },
+    {
+      "song": "APT.",
+      "artist": "ROSÉ, Bruno Mars",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_bruno_mars_-_apt.flac"
+    },
+    {
+      "song": "Gone",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_gone.flac"
+    },
+    {
+      "song": "Messy (From F1® The Movie)",
+      "artist": "ROSÉ, F1 The Album",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_f1_the_album_-_messy_from_f1_the_movie.flac"
+    },
+    {
+      "song": "On My Mind",
+      "artist": "Alex Warren, ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-alex_warren_ros_-_on_my_mind.flac"
+    },
+    {
+      "song": "On The Ground",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_on_the_ground.flac"
+    },
+    {
+      "song": "call it the end",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_call_it_the_end.flac"
+    },
+    {
+      "song": "dance all night",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_dance_all_night.flac"
+    },
+    {
+      "song": "drinks or coffee",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_drinks_or_coffee.flac"
+    },
+    {
+      "song": "gameboy",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_gameboy.flac"
+    },
+    {
+      "song": "not the same",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_not_the_same.flac"
+    },
+    {
+      "song": "number one girl",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_number_one_girl.flac"
+    },
+    {
+      "song": "stay a little longer",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_stay_a_little_longer.flac"
+    },
+    {
+      "song": "too bad for us",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_too_bad_for_us.flac"
+    },
+    {
+      "song": "toxic till the end",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_toxic_till_the_end.flac"
+    },
+    {
+      "song": "two years",
+      "artist": "ROSÉ",
+      "url": "https://lossless.echomusic.fun/Music/alok-debnath-ros_-_two_years.flac"
     }
   ]
 }
